@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2
+    ,"name": "ぷんすか！"
+    ,"description": "ぷんすか！したら、ぽちっと押して、バリバリ書いてスッキリ！"
+    ,"version": "0.0.1"
+
+    // ブラウザアクションボタンの設定
+    ,"browser_action": {
+        "default_icon": {"19":"./images/019.png"}
+        ,"default_title":"ぷんすか！したらぽちッとな。"
+        ,"default_popup": "popup.html"
+    }
+
+    ,"icons": {
+        "16":"./images/016.png",
+        "32":"./images/032.png",
+        "48":"./images/048.png",
+        "128":"./images/128.png"
+    }
+
+    // 拡張機能が必要とするパーミッション
+    // 例えばタブ操作する場合は"tabs"を指定する
+    // パーミッション一覧→https://developer.chrome.com/extensions/declare_permissions
+    ,"permissions": [
+        "tabs"
+        ,"http://*/*"
+    ]
+}
